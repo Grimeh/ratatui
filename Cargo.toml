@@ -180,6 +180,10 @@ unstable-widget-ref = []
 ## Enables getting access to backends' writers.
 unstable-backend-writer = []
 
+## Enables compatibility with nightly features in dependencies. Use this if you have compile issues
+## when using nightly features like allocator_api.
+nightly = ["lru/nightly"]
+
 [package.metadata.docs.rs]
 all-features = true
 # see https://doc.rust-lang.org/nightly/rustdoc/scraped-examples.html
