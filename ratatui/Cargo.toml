@@ -95,6 +95,10 @@ unstable-backend-writer = [
     "ratatui-termion?/unstable-backend-writer",
 ]
 
+## Enables nightly compiler features in dependencies, required if parent crate uses nightly 
+## features like allocator-api
+nightly = ["ratatui-core/nightly"]
+
 [dependencies]
 document-features = { workspace = true, optional = true }
 instability.workspace = true

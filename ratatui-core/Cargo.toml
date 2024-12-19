@@ -39,6 +39,10 @@ scrolling-regions = []
 ## This is useful if you want to save themes to a file.
 serde = ["dep:serde", "bitflags/serde", "compact_str/serde"]
 
+## Enables nightly features for dependencies, required if consumer crate enables nightly features
+## like allocator-api
+nightly = ["lru/nightly"]
+
 [dependencies]
 bitflags = "2.3"
 cassowary = "0.3"
